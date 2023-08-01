@@ -25,9 +25,8 @@
   ![model2](Resources/mod12.1.jpg)
 
 ## Summary
-
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
+## The `RandomOverSampler` preformed the best with a `0.99` balanced accuracy score, with the `LogisticRegression` model having a `0.95` in balanced accuracy score. While the difference doesn't seem like it would be that different, when it comes to knowing a high-risk vs a low-risk client more accuracy is better.
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+## The `LogisticRegression` model is accurate when the data is even, meaning that the `1's` and `0's` are around the same count, with the data that we had, the `1's` or the high-risk clients were at a very minimum which required a `RandomOverSampler` model to make sure that the `1's` were recognized and learned as they are the priority in this exercise.
 
-If you do not recommend any of the models, please justify your reasoning.
+## With the data that we obtained, and the general instance of a minimal amount of low-risk clients being available for learning I would reccomend using the `RandomOverSampler` model for the credit risk.
